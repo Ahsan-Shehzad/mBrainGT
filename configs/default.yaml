@@ -1,0 +1,39 @@
+paths:
+  project_root: .
+  data_root: data
+  raw_root: data/raw
+  derived_root: data/derived
+
+atlas:
+  m_modules: 7
+  r_rois: 246
+
+connectivity:
+  edge_p_threshold: 0.01
+  combat_covariates: ["age", "sex", "mean_fd"]
+
+model:
+  d_model: 256
+  dropout: 0.1
+  mlp_hidden: 512
+  n_heads: 8
+  k_lap_pe: 8
+  n_layers_mod: 2
+  n_layers_cross: 2
+  n_classes: 2
+
+train:
+  seed: 42
+  n_folds: 5
+  epochs: 200
+  batch_size: 8
+  num_workers: 4
+  lr: 0.0003
+  lr_min: 0.000001
+  weight_decay: 0.01
+  grad_clip: 1.0
+  amp: true
+  use_cosine: true
+  focal_gamma: 2.0
+  use_class_alpha: false
+  early_stopping_patience: 30
