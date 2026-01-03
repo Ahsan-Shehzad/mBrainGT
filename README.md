@@ -85,5 +85,5 @@ If you use this code in your research, please cite:
 ```
 Replace `author/journal/year` with final publication metadata (or your preprint).
 
-## License
-Add your preferred license in `LICENSE`.
+
+
