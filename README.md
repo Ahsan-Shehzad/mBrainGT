@@ -83,7 +83,6 @@ If you use this code in your research, please cite:
   year={...}
 }
 ```
-Replace `author/journal/year` with final publication metadata (or your preprint).
 
 
 
